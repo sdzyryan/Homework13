@@ -14,17 +14,18 @@ public class Book {
     }
 
     public String getNameBook(){
-
         return this.nameBook;
     }
 
     public int getYear() {
-
         return this.year;
     }
 
     public void setYear(int year) {
-
         this.year = year;
+    }
+
+    public String toString() {
+        return "Автор книги - " + this.author + "Название книги - " + this.nameBook + ". Год издания - " + this.year + ".";
     }
 }
