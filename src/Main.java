@@ -1,5 +1,25 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Author authorNineteenEightyFour = new Author("Джордж", "Оруэлл");
+        Book nineteenEightyFour = new Book(authorNineteenEightyFour, "1984", 2019);
+        System.out.println(nineteenEightyFour);
+
+        Author authorNineteenEightyFour2 = new Author("Джордж", "Оруэлл");
+        Book nineteenEightyFour2 = new Book(authorNineteenEightyFour, "1984", 20191);
+
+        Author authorFahrenheit451 = new Author("Рэй", "Брэдбери");
+        Book fahrenheit451 = new Book(authorFahrenheit451, "451 градус по фаренгейту",
+                2016);
+        fahrenheit451.setYear(2017);
+        System.out.println(fahrenheit451);
+
+        Author authorQuantumWarrior = new Author("Джон", "Кехо");
+        Book quantumWarrior = new Book(authorQuantumWarrior, "Квантовый воин. Cознание будущего",
+                2015);
+        System.out.println(quantumWarrior);
+
+        System.out.println(authorFahrenheit451.equals(authorQuantumWarrior));
+        System.out.println(authorNineteenEightyFour.equals(authorNineteenEightyFour2));
     }
 }
