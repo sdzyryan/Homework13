@@ -5,11 +5,12 @@ public class Main {
         Book nineteenEightyFour = new Book(authorNineteenEightyFour, "1984", 2019);
         System.out.println(nineteenEightyFour);
 
+        Author authorNineteenEightyFour2 = new Author("Джордж", "Оруэлл");
+        Book nineteenEightyFour2 = new Book(authorNineteenEightyFour, "1984", 20191);
+
         Author authorFahrenheit451 = new Author("Рэй", "Брэдбери");
         Book fahrenheit451 = new Book(authorFahrenheit451, "451 градус по фаренгейту",
                 2016);
-        System.out.println(fahrenheit451);
-
         fahrenheit451.setYear(2017);
         System.out.println(fahrenheit451);
 
@@ -17,5 +18,8 @@ public class Main {
         Book quantumWarrior = new Book(authorQuantumWarrior, "Квантовый воин. Cознание будущего",
                 2015);
         System.out.println(quantumWarrior);
+
+        System.out.println(authorFahrenheit451.equals(authorQuantumWarrior));
+        System.out.println(authorNineteenEightyFour.equals(authorNineteenEightyFour2));
     }
 }
